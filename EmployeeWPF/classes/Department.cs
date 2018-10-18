@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace EmployeeList
+namespace EmployeeWPF
 {
     public class Department : INotifyPropertyChanged
     {
@@ -25,6 +25,6 @@ namespace EmployeeList
             }
         }
 
-        public 
+        public int Id { get => id; set => id = value; }
     }
 }

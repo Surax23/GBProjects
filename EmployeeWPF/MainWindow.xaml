@@ -1,0 +1,37 @@
+﻿<Window x:Class="EmployeeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeeWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Name="MnWndw" Height="450" Width="800" Background="#DBA158">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Background="#DBC858" Height="100" VerticalAlignment="Top" Width="792">
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Департамент:" VerticalAlignment="Top" FontSize="26"/>
+            <ComboBox x:Name="cmbx_departments" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,-25,0,0" Width="250">
+                <ComboBox.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <TextBlock Text="{Binding Name,UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+                    </ItemContainerTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <Button x:Name="btn_AddDep" Content="Добавить" HorizontalAlignment="Left" Margin="470,-25,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="btn_ChDep" Content="Изменить" HorizontalAlignment="Left" Margin="560,-25,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="btn_DelDep" Content="Удалить" HorizontalAlignment="Left" Margin="650,-25,0,0" VerticalAlignment="Top" Width="75"/>
+        </StackPanel>
+        <ListView x:Name="lv_employees" Background="#CA526C" Margin="0,140,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+                    <GridViewColumn Header="Возраст" DisplayMemberBinding="{Binding Age}"/>
+                    <GridViewColumn Header="Зарплата" DisplayMemberBinding="{Binding Salary, StringFormat=. руб\\.}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btn_AddEmp" Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,115,0,0"/>
+        <Button x:Name="btn_ChEmp" Content="Изменить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,115,0,0"/>
+        <Button x:Name="btn_DelEmp" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="190,115,0,0"/>
+    </Grid>
+</Window>

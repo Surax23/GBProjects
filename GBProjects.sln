@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeList", "EmployeeList\EmployeeList.csproj", "{C026FBB5-0696-4276-ACF2-11163A4B54BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeWPF", "EmployeeWPF\EmployeeWPF.csproj", "{3E042866-629B-4B73-9B98-73970FDB17AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C026FBB5-0696-4276-ACF2-11163A4B54BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C026FBB5-0696-4276-ACF2-11163A4B54BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C026FBB5-0696-4276-ACF2-11163A4B54BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C026FBB5-0696-4276-ACF2-11163A4B54BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E042866-629B-4B73-9B98-73970FDB17AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E042866-629B-4B73-9B98-73970FDB17AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E042866-629B-4B73-9B98-73970FDB17AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E042866-629B-4B73-9B98-73970FDB17AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

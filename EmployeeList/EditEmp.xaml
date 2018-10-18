@@ -11,8 +11,8 @@
         <TextBox HorizontalAlignment="Center" Height="23" Margin="0,25,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="Возраст:" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Center" Height="23" Margin="0,70,0,0" TextWrapping="Wrap" Text="{Binding Age}" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,90,0,0" TextWrapping="Wrap" Text="Зарплата:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Center" Height="23" Margin="0,110,0,0" TextWrapping="Wrap" Text="{Binding Salary}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" Text="Зарплата:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Center" Height="23" Margin="0,115,0,0" TextWrapping="Wrap" Text="{Binding Salary}" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

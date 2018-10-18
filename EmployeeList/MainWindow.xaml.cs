@@ -22,6 +22,7 @@ namespace EmployeeList
     public partial class MainWindow : Window
     {
         ObservableCollection<Department> dep_list;
+        //Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Skola121\source\repos\GBProjects\EmployeeList\MSSQLLocalDB.mdf;Integrated Security=True;Connect Timeout=30
 
         public MainWindow()
         {
@@ -42,6 +43,8 @@ namespace EmployeeList
             }
 
             cmbx_departments.ItemsSource = dep_list;
+
+            Model model = new Model();
 
             cmbx_departments.SelectionChanged += Selection_Changed;
             btnAddDep.Click += DepAdd;
